@@ -2,8 +2,8 @@
 
 ![Logo](addons/MMITool/icon.png)
 
-A plugin for Gotod (3.3) that simplifies working with MultimeshInstances.
-If you have a lot of repeating models in a 3D scene, you should optimize iit by using a MultiMesh. Godot's editor doesn't make that easy, and you have to place your meshes by code.
+A plugin for Godot (3.3) that simplifies working with MultimeshInstances.
+If you have a lot of repeating models in a 3D scene, you should optimize it by using a MultiMesh. Godot's editor doesn't make that easy, and you have to place your meshes by code.
 
 With this tool, you can place everything visually and not have to worry about performance hits.
 
