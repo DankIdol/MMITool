@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/MMITool/Node.gd" type="Script" id=1]
+[ext_resource path="res://catghost.obj" type="ArrayMesh" id=2]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 1, 1, 1 )
+
+[node name="Test" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.877583, -0.229849, 0.420735, 0, 0.877583, 0.479426, -0.479426, -0.420736, 0.770151, 5.76392, 6.56795, 10.5508 )
+
+[node name="MMITool" type="Spatial" parent="."]
+script = ExtResource( 1 )
+mesh = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="MMITool"]
+transform = Transform( 1, 0, 0, 0, 0.850673, -0.525694, 0, 0.525694, 0.850673, -3.2858, 3.95274, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="MMITool"]
+transform = Transform( 0.464337, 0.443737, -0.766478, -0.579546, 0.806655, 0.115904, 0.669714, 0.390391, 0.631726, -3.2858, -3.90175, -5.58717 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="MeshInstance2" type="MeshInstance" parent="MMITool"]
+transform = Transform( 0.824205, 0, 0.566291, 0, 1, 0, -0.566291, 0, 0.824205, 4.176, 0, -5.62675 )
+mesh = SubResource( 1 )
+material/0 = null

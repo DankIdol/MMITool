@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/catghost.obj-1daa4bd57eabb22a44d20b4f006afdea.mesh"
+
+[deps]
+
+files=[ "res://.import/catghost.obj-1daa4bd57eabb22a44d20b4f006afdea.mesh" ]
+
+source_file="res://catghost.obj"
+dest_files=[ "res://.import/catghost.obj-1daa4bd57eabb22a44d20b4f006afdea.mesh", "res://.import/catghost.obj-1daa4bd57eabb22a44d20b4f006afdea.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
