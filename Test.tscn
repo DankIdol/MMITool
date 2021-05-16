@@ -1,12 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://addons/MMITool/Node.gd" type="Script" id=1]
 [ext_resource path="res://catghost.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://dankidolbglogo.png" type="Texture" id=3]
 
-[sub_resource type="CubeMesh" id=1]
-size = Vector3( 1, 1, 1 )
+[sub_resource type="SphereMesh" id=1]
 
 [node name="Test" type="Spatial"]
+
+[node name="Logo" type="Sprite" parent="."]
+position = Vector2( 991.454, 571.877 )
+scale = Vector2( 0.0418418, 0.0418418 )
+texture = ExtResource( 3 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 0.877583, -0.229849, 0.420735, 0, 0.877583, 0.479426, -0.479426, -0.420736, 0.770151, 5.76392, 6.56795, 10.5508 )
@@ -14,18 +19,19 @@ transform = Transform( 0.877583, -0.229849, 0.420735, 0, 0.877583, 0.479426, -0.
 [node name="MMITool" type="Spatial" parent="."]
 script = ExtResource( 1 )
 mesh = ExtResource( 2 )
+add_collider = true
 
 [node name="MeshInstance" type="MeshInstance" parent="MMITool"]
-transform = Transform( 1, 0, 0, 0, 0.850673, -0.525694, 0, 0.525694, 0.850673, -3.2858, 3.95274, 0 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance3" type="MeshInstance" parent="MMITool"]
-transform = Transform( 0.464337, 0.443737, -0.766478, -0.579546, 0.806655, 0.115904, 0.669714, 0.390391, 0.631726, -3.2858, -3.90175, -5.58717 )
+transform = Transform( 0.536852, 0.610961, -0.581822, -0.414313, 0.791661, 0.449018, 0.734938, 0, 0.678134, -4.24249, 2.08985, 0 )
 mesh = SubResource( 1 )
 material/0 = null
 
 [node name="MeshInstance2" type="MeshInstance" parent="MMITool"]
-transform = Transform( 0.824205, 0, 0.566291, 0, 1, 0, -0.566291, 0, 0.824205, 4.176, 0, -5.62675 )
+transform = Transform( 0.650297, 0, 0.75968, 0, 1, 0, -0.75968, 0, 0.650297, 4.60701, -4.75412, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="MMITool"]
+transform = Transform( 1, 0, 0, 0, 0.687975, -0.725735, 0, 0.725735, 0.687975, 4.60701, -4.75412, -12.9698 )
 mesh = SubResource( 1 )
 material/0 = null
